@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('users', UserController::class);
+Route::resource('users', UserController::class)->middleware('admin');
 
 Route::prefix('task')->group(function () {
     Route::get('', [TaskController::class, 'index'])->name('index');
