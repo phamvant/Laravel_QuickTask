@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\TaskController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,14 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('users', UserController::class)->middleware('admin');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-Route::prefix('task')->group(function () {
-    Route::get('', [TaskController::class, 'index'])->name('index');
-    Route::get('/create', [TaskController::class, 'create'])->name('create');
-    Route::get('/{id}', [TaskController::class, 'show'])->name('show');
-    Route::get('/{id}', [TaskController::class, 'edit'])->name('edit');
-    Route::post('', [TaskController::class, 'store'])->name('store');
-    Route::put('/{id}', [TaskController::class, 'update'])->name('update');
-    Route::delete('/{id}', [TaskController::class, 'destroy'])->name('destroy');
-});
+require __DIR__.'/auth.php';

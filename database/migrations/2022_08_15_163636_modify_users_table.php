@@ -14,12 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('username')->after('id');
-            $table->boolean('is_admin')->after('password');
-            $table->boolean('is_active')->after('is_admin');
+            $table->string('username')->after('id')->nullable();
+            $table->boolean('is_admin')->after('password')->default('0');
+            $table->boolean('is_active')->after('is_admin')->default('0');
             $table->dropColumn('name');
-            $table->string('first_name')->after('username');
-            $table->string('last_name')->after('first_name');
+            $table->string('first_name')->after('username')->nullable();
+            $table->string('last_name')->after('first_name')->nullable();
         });
     }
 
