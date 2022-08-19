@@ -12,6 +12,12 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
+            <a href="{{ route('lang',['lang' => 'vi']) }}">VI |</a>
+
+            <a href="{{ route('lang',['lang' => 'en' ]) }}">EN</a>
+            <br>
+            <br>
+
             <!-- Name -->
             <div>
                 <x-label for="username" :value="__('Username')" />
