@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LangController;
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +15,11 @@ use App\Http\Controllers\LangController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+
+// })->name('home');
+
+Route::get('/', [PageController::class, 'index'])->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
