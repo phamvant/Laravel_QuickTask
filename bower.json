@@ -1,0 +1,20 @@
+{
+  "name": "Laravel_Quicktask",
+  "description": "TableView",
+  "main": "",
+  "authors": [
+    "phamvant <pham.t.286.01@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/phamvant/Laravel_Quicktask",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "demo_template": "https://github.com/phamvant/demo_template.git"
+  }
+}
