@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\User;
+use App\Models\Task;
+use Illuminate\Support\Facades\Session;
 
 use Illuminate\Http\Request;
 
@@ -13,7 +16,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::all();
+
+        return view('users.index', compact('users'));
     }
 
     /**
@@ -45,7 +50,9 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::with('tasks')->find($id);
+
+        return view('profile.edit', compact('user'));
     }
 
     /**
@@ -56,7 +63,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::with('tasks')->find($id);
+
+        return view('profile.edit', compact('user'));
     }
 
     /**
@@ -68,7 +77,16 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // Tìm đến đối tượng muốn update
+        $user = User::findOrFail($id);
+
+        // gán dữ liệu gửi lên vào biến data
+        $data = $request->except(['_token', '_method']);
+
+        // Update user
+        $user->update($data);
+
+        return back()->withInput()->with('success_user', 'User update successful');
     }
 
     /**
@@ -79,6 +97,9 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::findOrFail($id);
+        $user->delete();
+
+        return redirect('home');
     }
 }

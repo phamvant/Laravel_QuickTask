@@ -18,7 +18,7 @@ class TaskFactory extends Factory
     public function definition()
     {
         return [
-            'task_content' => Str::random(100),
+            'task_content' => Str::random(25),
             'deadline' => fake()->date(),
         ];
     }
