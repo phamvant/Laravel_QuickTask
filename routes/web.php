@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +17,6 @@ use App\Http\Controllers\UserController;
 |
 */
 
-// Route::get('/', function () {
-
-// })->name('home');
-
 Route::get('/', [PageController::class, 'index'])->name('home');
 
 Route::get('/dashboard', function () {
@@ -26,5 +24,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('lang/{lang}', [LangController::class, 'changeLang'])->name('lang');
+
+Route::resource('users', UserController::class);
+Route::resource('tasks', TaskController::class);
 
 require __DIR__.'/auth.php';
