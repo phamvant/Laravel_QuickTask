@@ -97,9 +97,10 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        $user = User::findOrFail($id);
-        $user->delete();
+        $user = User::with('tasks')->find($id);
+        $user->tasks->each->delete();
+        $user->delete();  
 
-        return redirect('home');
+        return redirect('users');
     }
 }
