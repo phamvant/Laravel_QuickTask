@@ -3,6 +3,7 @@
 ## 1. Mục tiêu
 - Làm quen và sử dụng framework Laravel.
 - Áp dụng Sun* GIT flow.
+- Xây dựng Web CRUD đơn giản
 
 ## 2. Các kiến thức cơ bản cần nắm được:
 1. Init project, Directory Structure
