@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-6 collapse-brand">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/blue.png">
+                            <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/logo.png">
                         </a>
                     </div>
                     <div class="col-6 collapse-close">

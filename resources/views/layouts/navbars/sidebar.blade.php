@@ -6,7 +6,7 @@
         </button>
         <!-- Brand -->
         <a class="navbar-brand pt-0" href="{{ route('home') }}">
-            <img src="{{ asset('/bower_components/demo_template/argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="...">
+            <img src="{{ asset('/bower_components/demo_template/argon') }}/img/brand/logobop.png" class="navbar-brand-img" alt="...">
         </a>
         <!-- User -->
         <ul class="nav align-items-center d-md-none">
@@ -54,7 +54,7 @@
                 <div class="row">
                     <div class="col-6 collapse-brand">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('argon') }}/img/brand/blue.png">
+                            <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/logo.png">
                         </a>
                     </div>
                     <div class="col-6 collapse-close">
@@ -78,67 +78,49 @@
             </form>
             <!-- Navigation -->
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item kk"  >
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="ni ni-tv-2 text-primary"></i> {{ __('Home') }}
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/home1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('HOME') }}
                     </a>
                 </li>
                 
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ route('mp') }}">
-                        <i class="fab fa-laravel" style="color: #f4645f;"></i> {{ __('MOUSE PAD') }}
+                <li class="nav-item kk">
+                    <a class="nav-link"  href="{{ route('m') }}">
+                        <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/mouse1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('MOUSE') }}
                         
                     </a>
 
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('gg') }}">
-                        <i class="ni ni-planet text-blue"></i> {{ __('GAMING GEAR') }}
+                <li class="nav-item kk">
+                    <a class="nav-link" href="{{ route('k') }}">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/keyboard1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('KEYBOARD') }}
                     </a>
                 </li>
 
-                <li class="nav-item ">
+                <li class="nav-item kk">
+                    <a class="nav-link" href="{{ route('f') }}">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/figure1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('FIGURE') }}
+                    </a>
+                </li>
+                <li class="nav-item kk">
+                    <a class="nav-link" href="{{ route('s') }}" id="test11">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/speaker1.png" alt="" width="40px" height="25%" style="margin-right : 20px"> {{ __('SPEAKER') }}
+                    </a>
+                </li>
+                <li class="nav-item kk">
+                    <a class="nav-link " href="{{ route('c') }}">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/clock1.png" alt="" width="35px" height="25%" style="margin-right : 25px"> {{ __('CLOCK ') }}
+                    </a>
+                    
+                </li>
+                <li class="nav-item kk">
                     <a class="nav-link" href="{{ route('da') }}">
-                        <i class="ni ni-pin-3 text-orange"></i> {{ __('DECOR ACCESSORIES') }}
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/decoraccesories1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('DECOR ACCESSORIES ') }}
                     </a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="{{ route('smw') }}">
-                        <i class="ni ni-pin-3 text-orange"></i> {{ __('SPEAKER, MICRO, WEBCAM') }}
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="{{ route('gc') }}">
-                        <i class="ni ni-pin-3 text-orange"></i> {{ __('GAMING CHAIR ') }}
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="{{ route('gt') }}">
-                        <i class="ni ni-pin-3 text-orange"></i> {{ __('GAMING TABLE ') }}
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="{{ route('ssu') }}">
-                        <i class="ni ni-pin-3 text-orange"></i> {{ __('SIGNAL SPLITTER, USB ') }}
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="{{ route('rc') }}">
-                        <i class="ni ni-pin-3 text-orange"></i> {{ __('RADIATORS, COOLING ') }}
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="{{ route('pa') }}">
-                        <i class="ni ni-pin-3 text-orange"></i> {{ __('PHONE ACCESSORIES ') }}
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <i class="ni ni-bullet-list-67 text-default"></i>
-                      <span class="nav-link-text">Tables</span>
-                    </a>
-                </li>
+               
+                
                 
             </ul>
             <!-- Divider -->
@@ -149,17 +131,17 @@
             <ul class="navbar-nav mb-md-3">
                 <li class="nav-item">
                     <a class="nav-link" href="https://argon-dashboard-laravel.creative-tim.com/docs/getting-started/overview.html">
-                        <i class="ni ni-spaceship"></i> Getting started
+                        <i class="ni ni-spaceship"></i> SUPPORT
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://argon-dashboard-laravel.creative-tim.com/docs/foundation/colors.html">
-                        <i class="ni ni-palette"></i> Foundation
+                        <i class="ni ni-palette"></i> FEEDBACK
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://argon-dashboard-laravel.creative-tim.com/docs/components/alerts.html">
-                        <i class="ni ni-ui-04"></i> Components
+                        <i class="ni ni-ui-04"></i> MAP
                     </a>
                 </li>
             </ul>

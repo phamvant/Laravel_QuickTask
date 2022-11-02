@@ -25,15 +25,13 @@ Route::get('/dashboard', function () {
 
 Route::get('lang/{lang}', [LangController::class, 'changeLang'])->name('lang');
 
-Route::get('mousepad', [PageController::class, 'mp'])->name('mp');
-Route::get('gaminggear', [PageController::class, 'gg'])->name('gg');
+Route::get('mouse', [PageController::class, 'm'])->name('m');
+Route::get('keyboard', [PageController::class, 'k'])->name('k');
 Route::get('decoraccessories', [PageController::class, 'da'])->name('da');
-Route::get('speakermicrowebcam', [PageController::class, 'smw'])->name('smw');
-Route::get('gamingchair', [PageController::class, 'gc'])->name('gc');
-Route::get('gamingtable', [PageController::class, 'gt'])->name('gt');
-Route::get('signalsplitterusb', [PageController::class, 'ssu'])->name('ssu');
-Route::get('radiatorscooling', [PageController::class, 'rc'])->name('rc');
-Route::get('phoneaccessories', [PageController::class, 'pa'])->name('pa');
+Route::get('figure', [PageController::class, 'f'])->name('f');
+Route::get('speaker', [PageController::class, 's'])->name('s');
+Route::get('clock', [PageController::class, 'c'])->name('c');
+
 Route::resource('users', UserController::class);
 Route::resource('tasks', TaskController::class);
 

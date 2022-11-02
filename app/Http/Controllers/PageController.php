@@ -10,40 +10,29 @@ class PageController extends Controller
     {
         return view('welcome');
     }
-    public function mp()
+    public function m()
     {
-        return view('pages.mousepad');
+        return view('pages.mouse');
     }
-    public function gg()
+    public function k()
     {
-        return view('pages.gaminggear');
+        return view('pages.keyboard');
+    }
+    public function f()
+    {
+        return view('pages.figure');
+    }
+    public function s()
+    {
+        return view('pages.speaker');
+    }
+    public function c()
+    {
+        return view('pages.clock');
     }
     public function da()
     {
         return view('pages.decoraccessories');
     }
-    public function smw()
-    {
-        return view('pages.speakermicrowebcam');
-    }
-    public function gc()
-    {
-        return view('pages.gamingchair');
-    }
-    public function gt()
-    {
-        return view('pages.gamingtable');
-    }
-    public function ssu()
-    {
-        return view('pages.signalsplitterusb');
-    }
-    public function rc()
-    {
-        return view('pages.radiatorscooling');
-    }
-    public function pa()
-    {
-        return view('pages.phoneaccessories');
-    }
+   
 }
