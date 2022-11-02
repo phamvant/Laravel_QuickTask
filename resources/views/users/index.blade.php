@@ -71,7 +71,7 @@
     </button>
     <!-- Brand -->
     <a class="navbar-brand pt-0" href="{{ route('home') }}">
-        <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="...">
+        <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/logo.png" class="navbar-brand-img" alt="...">
     </a>
     <!-- User -->
     <ul class="nav align-items-center d-md-none">
@@ -120,7 +120,7 @@
             <div class="row">
                 <div class="col-6 collapse-brand">
                     <a  href="{{ route('home') }}">
-                        <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/blue.png">
+                        <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/logo.png">
                     </a>
                 </div>
                 <div class="col-6 collapse-close">
@@ -223,7 +223,7 @@
 <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
 <div class="container-fluid">
     <!-- Brand -->
-    <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="{{ route('home') }}">Dashboard</a>
+    <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="{{ route('home') }}">Chào mừng các bạn đến với Cozyfam</a>
     <!-- Form -->
     <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
         <div class="form-group mb-0">
