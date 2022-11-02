@@ -25,6 +25,7 @@ Route::get('/dashboard', function () {
 
 Route::get('lang/{lang}', [LangController::class, 'changeLang'])->name('lang');
 
+Route::get('home', [PageController::class, 'h'])->name('h');
 Route::get('mouse', [PageController::class, 'm'])->name('m');
 Route::get('keyboard', [PageController::class, 'k'])->name('k');
 Route::get('decoraccessories', [PageController::class, 'da'])->name('da');

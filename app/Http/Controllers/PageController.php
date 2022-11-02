@@ -10,6 +10,10 @@ class PageController extends Controller
     {
         return view('welcome');
     }
+    public function h()
+    {
+        return view('pages.home');
+    }
     public function m()
     {
         return view('pages.mouse');

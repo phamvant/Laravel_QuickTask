@@ -79,7 +79,7 @@
             <!-- Navigation -->
             <ul class="navbar-nav">
                 <li class="nav-item kk"  >
-                    <a class="nav-link" href="{{ route('home') }}">
+                    <a class="nav-link" href="{{ route('h') }}">
                     <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/home1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('HOME') }}
                     </a>
                 </li>
