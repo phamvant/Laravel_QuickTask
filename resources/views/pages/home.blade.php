@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>OneTech</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="OneTech shop project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
+
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/demo_template/onetech') }}/styles/bootstrap4/bootstrap.min.css">
 <link href="{{ asset('bower_components/demo_template/onetech') }}/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/demo_template/onetech') }}/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -15,9 +9,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/demo_template/onetech') }}/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/demo_template/onetech') }}/styles/responsive.css">
 
-</head>
-@extends('layouts.app')
-<body>
+
 @section('content')
 
 <div class="super_container">
@@ -34,7 +26,7 @@
 				<div class="col-lg-3 col-md-6 char_col">
 					
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="images/char_1.png" alt=""></div>
+						<div class="char_icon"><img src="{{ asset('bower_components/demo_template/onetech') }}/images/char_1.png" alt=""></div>
 						<div class="char_content">
 							<div class="char_title">Free Delivery</div>
 							<div class="char_subtitle">from $50</div>
@@ -46,9 +38,9 @@
 				<div class="col-lg-3 col-md-6 char_col">
 					
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="images/char_2.png" alt=""></div>
+						<div class="char_icon"><img src="{{ asset('bower_components/demo_template/onetech') }}/images/char_2.png" alt=""></div>
 						<div class="char_content">
-							<div class="char_title">Free Delivery</div>
+							<div class="char_title">Free Exchange</div>
 							<div class="char_subtitle">from $50</div>
 						</div>
 					</div>
@@ -58,9 +50,9 @@
 				<div class="col-lg-3 col-md-6 char_col">
 					
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="images/char_3.png" alt=""></div>
+						<div class="char_icon"><img src="{{ asset('bower_components/demo_template/onetech') }}/images/char_3.png" alt=""></div>
 						<div class="char_content">
-							<div class="char_title">Free Delivery</div>
+							<div class="char_title">Free VAT</div>
 							<div class="char_subtitle">from $50</div>
 						</div>
 					</div>
@@ -70,9 +62,9 @@
 				<div class="col-lg-3 col-md-6 char_col">
 					
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="images/char_4.png" alt=""></div>
+						<div class="char_icon"><img src="{{ asset('bower_components/demo_template/onetech') }}/images/char_4.png" alt=""></div>
 						<div class="char_content">
-							<div class="char_title">Free Delivery</div>
+							<div class="char_title">Discount Tickets</div>
 							<div class="char_subtitle">from $50</div>
 						</div>
 					</div>
@@ -816,7 +808,7 @@
 <script src="{{ asset('bower_components/demo_template/onetech') }}/js/jquery-3.3.1.min.js"></script>
 <script src="{{ asset('bower_components/demo_template/onetech') }}/styles/bootstrap4/popper.js"></script>
 <script src="{{ asset('bower_components/demo_template/onetech') }}/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="{{ asset('bower_components/demo_template/onetech') }}/plugins/greensock/TweenMax.min.js"></script>
+<!--<script src="{{ asset('bower_components/demo_template/onetech') }}/plugins/greensock/TweenMax.min.js"></script>
 <script src="{{ asset('bower_components/demo_template/onetech') }}/plugins/greensock/TimelineMax.min.js"></script>
 <script src="{{ asset('bower_components/demo_template/onetech') }}/plugins/scrollmagic/ScrollMagic.min.js"></script>
 <script src="{{ asset('bower_components/demo_template/onetech') }}/plugins/greensock/animation.gsap.min.js"></script>
@@ -824,6 +816,5 @@
 <script src="{{ asset('bower_components/demo_template/onetech') }}/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="{{ asset('bower_components/demo_template/onetech') }}/plugins/slick-1.8.0/slick.js"></script>
 <script src="{{ asset('bower_components/demo_template/onetech') }}/plugins/easing/easing.js"></script>
-<script src="{{ asset('bower_components/demo_template/onetech') }}/js/custom.js"></script>
+<script src="{{ asset('bower_components/demo_template/onetech') }}/js/custom.js"></script>-->
 @endsection
-</body>

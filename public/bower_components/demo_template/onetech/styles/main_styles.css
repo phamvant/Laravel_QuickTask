@@ -1277,8 +1277,8 @@ select option
 
 .characteristics
 {
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding: 70px;
+	margin-top: 70px;
 }
 .char_item
 {
@@ -2206,7 +2206,6 @@ select option
 .new_arrivals
 {
 	width: 100%;
-	padding-top: 96px;
 	padding-bottom: 96px;
 }
 .new_arrivals_title
