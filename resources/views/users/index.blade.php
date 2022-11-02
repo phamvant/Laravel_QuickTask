@@ -327,7 +327,12 @@
                                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                                 <a class="dropdown-item" href="{{ route('users.show', ['user' => $user->id]) }}">{{ __('Detail') }}</a>
                                                 <a class="dropdown-item" href="{{ route('users.edit', ['user' => $user->id]) }}">{{ __('Edit') }}</a>
-                                                <a class="dropdown-item" href="{{ route('users.destroy', ['user' => $user->id]) }}">{{ __('Delete') }}</a>
+                                                <form style="padding: 10px 10px;" action="{{ route('users.destroy' , $user->id)}}" method="POST">
+                                                    <input type="hidden" name="_method" value="DELETE" />
+                                                    {{ csrf_field() }}
+                                                    <button style="padding: 2px 2px; background-color:white; color:slateblue" type="submit" class="btn btn-primary">Delete</button>
+                                                    {{-- <a class="dropdown-item">{{ __('Delete') }}</a> --}}
+                                                </form>
                                             </div>
                                         </div>
                                     </td>

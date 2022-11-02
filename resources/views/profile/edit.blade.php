@@ -163,6 +163,13 @@
                                     @else
                                         <input type="text" name="task_content" id="input-taskcontent" class="form-control form-control-alternative{{ $errors->has('task_content') ? ' is-invalid' : '' }}" placeholder="{{ __('Task') }}" value="NULL" required>
                                     @endif
+                                    <br>
+                                    <label class="form-control-label" for="input-task">{{ __('Deadline') }}</label>
+                                    @if (isset($user->tasks->first()->deadline))
+                                    <input type="text" name="deadline" id="input-deadline" class="form-control form-control-alternative{{ $errors->has('deadline') ? ' is-invalid' : '' }}" placeholder="{{ __('Task') }}" value="{{ old('deadline', formatDate($user->tasks->first()->deadline)) }}" required>
+                                    @else
+                                    <input type="text" name="deadline" id="input-deadline" class="form-control form-control-alternative{{ $errors->has('deadline') ? ' is-invalid' : '' }}" placeholder="{{ __('Task') }}" value="NULL" required>
+                                    @endif
                                     @if ($errors->has('email'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('email') }}</strong>
