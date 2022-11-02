@@ -1063,8 +1063,3 @@ var SalesChart = (function() {
 })();
 
 
-//change color
-document.getElementById("kkd").addEventListener("click", sdsdFunction);
-function sdsdFunction(){
-	document.getElementById("kkd").style.backgroundColor="blue";
-}

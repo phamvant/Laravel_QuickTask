@@ -5,7 +5,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Brand -->
-        <a class="navbar-brand pt-0" href="{{ route('home') }}">
+        <a class="navbar-brand pt-0" href="http://127.0.0.1:8001/home">
             <img src="{{ asset('/bower_components/demo_template/argon') }}/img/brand/logobop.png" class="navbar-brand-img" alt="...">
         </a>
         <!-- User -->
@@ -78,39 +78,38 @@
             </form>
             <!-- Navigation -->
             <ul class="navbar-nav">
-                <li class="nav-item kk"  >
+                <li class="nav-item"  >
                     <a class="nav-link" href="{{ route('h') }}">
                     <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/home1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('HOME') }}
                     </a>
                 </li>
                 
-                <li class="nav-item kk">
+                <li class="nav-item">
                     <a class="nav-link"  href="{{ route('m') }}">
-                        <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/mouse1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('MOUSE') }}
-                        
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/mouse1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('MOUSE') }}
                     </a>
 
                 </li>
 
-                <li class="nav-item kk">
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('k') }}">
                     <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/keyboard1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('KEYBOARD') }}
                     </a>
                 </li>
 
-                <li class="nav-item kk">
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('f') }}">
                     <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/figure1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('FIGURE') }}
                     </a>
                 </li>
-                <li class="nav-item kk">
-                    <a class="nav-link" href="{{ route('s') }}" id="test11">
-                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/speaker1.png" alt="" width="40px" height="25%" style="margin-right : 20px"> {{ __('SPEAKER') }}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('s') }}">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/speaker1.png" alt="" width="25%" height="25%" style="margin-right : 16px"> {{ __('SPEAKER') }}
                     </a>
                 </li>
-                <li class="nav-item kk">
+                <li class="nav-item">
                     <a class="nav-link " href="{{ route('c') }}">
-                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/clock1.png" alt="" width="35px" height="25%" style="margin-right : 25px"> {{ __('CLOCK ') }}
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/clock1.png" alt="" width="25%" height="25%" style="margin-right : 16px"> {{ __('CLOCK ') }}
                     </a>
                     
                 </li>

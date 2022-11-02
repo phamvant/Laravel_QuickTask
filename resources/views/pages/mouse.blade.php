@@ -23,7 +23,9 @@
 @extends('layouts.app')
 <body>
 @section('content')
-
+@auth()
+    @include('layouts.navbars.navs.auth')
+@endauth
 
 
 

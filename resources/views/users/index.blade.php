@@ -1,3 +1,9 @@
+
+@extends('layouts.app')
+   
+@section('content')
+    @include('layouts.headers.cards')
+
 <html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -379,10 +385,7 @@
     </div>
 
     
-    <script src="{{ asset('bower_components/demo_template/argon') }}/vendor/jquery/dist/jquery.min.js"></script>
-        <script src="{{ asset('bower_components/demo_template/argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @include('layouts.footers.auth')
     
-            
-    <!-- Argon JS -->
-    <script src="{{ asset('bower_components/demo_template/argon') }}/js/argon.js?v=1.0.0"></script>
-</body></html>
+
+@endsection
