@@ -13,7 +13,7 @@
 
 
 </head>
-@extends('layouts.app')
+
 <body>
 
 @section('content')
@@ -147,12 +147,14 @@
 							<div class="bestsellers_slider slider">
 
 								<!-- Best Sellers Item -->
+								@foreach ($products as $product)
 								<div class="bestsellers_item discount">
 									<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-										<div class="bestsellers_image"><img src="images/best_1.png" alt=""></div>
+						
+										<div class="bestsellers_image"><img src="{{$product->Images}}" alt=""></div>
 										<div class="bestsellers_content">
-											<div class="bestsellers_category"><a href="#">Headphones</a></div>
-											<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+											<div class="bestsellers_category"><a href="#">Keyboard</a></div>
+											<div class="bestsellers_name"><a href="product.html">BÀN PHÍM CƠ IQUNIX F97 WINTER TIDE RGB CHERRY SILENT RED SWITCH</a></div>
 											<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
 											<div class="bestsellers_price discount">$225<span>$300</span></div>
 										</div>
@@ -163,6 +165,7 @@
 										<li class="bestsellers_mark bestsellers_new">new</li>
 									</ul>
 								</div>
+								@endforeach
 
 								<!-- Best Sellers Item -->
 								<div class="bestsellers_item discount">
