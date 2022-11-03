@@ -20,7 +20,7 @@ use App\Http\Controllers\TaskController;
 Route::get('/', [PageController::class, 'index'])->name('home');
 
 Route::get('/dashboard', function () {
-    return view('pages.home');
+    return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('lang/{lang}', [LangController::class, 'changeLang'])->name('lang');
