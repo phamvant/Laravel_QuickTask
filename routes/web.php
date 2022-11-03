@@ -17,11 +17,11 @@ use App\Http\Controllers\TaskController;
 |
 */
 
-Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/', [PageController::class, 'h'])->name('h');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/home', function () {
+    return view('h');
+})->middleware(['auth'])->name('h');
 
 Route::get('lang/{lang}', [LangController::class, 'changeLang'])->name('lang');
 
