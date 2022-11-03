@@ -5,7 +5,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Brand -->
-        <a class="navbar-brand pt-0" href="http://127.0.0.1:8001/home">
+        <a class="navbar-brand pt-0" href="{{ route('h') }}">
             <img src="{{ asset('/bower_components/demo_template/argon') }}/img/brand/logobop.png" class="navbar-brand-img" alt="...">
         </a>
         <!-- User -->
@@ -77,6 +77,8 @@
                 </div>
             </form>
             <!-- Navigation -->
+            <hr class="my-3">
+            <h6 class="navbar-heading text-muted">{{ __('CATEGORY') }}</h6>
             <ul class="navbar-nav">
                 <li class="nav-item"  >
                     <a class="nav-link" href="{{ route('h') }}">
@@ -109,13 +111,13 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="{{ route('c') }}">
-                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/clock1.png" alt="" width="25%" height="25%" style="margin-right : 16px"> {{ __('CLOCK ') }}
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/clock1.png" alt="" width="25%" height="25%" style="margin-right : 16px"> {{ __('CLOCK') }}
                     </a>
                     
                 </li>
-                <li class="nav-item kk">
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('da') }}">
-                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/decoraccesories1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('DECOR ACCESSORIES ') }}
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/decoraccesories1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('DECOR ACCESSORIES') }}
                     </a>
                 </li>
                
@@ -125,17 +127,17 @@
             <!-- Divider -->
             <hr class="my-3">
             <!-- Heading -->
-            <h6 class="navbar-heading text-muted">Documentation</h6>
+            <h6 class="navbar-heading text-muted">{{ __('INTERACTIVE') }}</h6>
             <!-- Navigation -->
             <ul class="navbar-nav mb-md-3">
                 <li class="nav-item">
                     <a class="nav-link" href="https://argon-dashboard-laravel.creative-tim.com/docs/getting-started/overview.html">
-                        <i class="ni ni-spaceship"></i> SUPPORT
+                        <i class="ni ni-spaceship"></i> {{ __('SUPPORT') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://argon-dashboard-laravel.creative-tim.com/docs/foundation/colors.html">
-                        <i class="ni ni-palette"></i> FEEDBACK
+                        <i class="ni ni-palette"></i> {{ __('FEEDBACK') }}
                     </a>
                 </li>
                 <li class="nav-item">

@@ -1760,9 +1760,9 @@ pre code
     }
     .col-xl-6
     {
-        max-width: 50%; 
+        max-width: 100%; 
+        flex: auto;
 
-        flex: 0 0 50%;
     }
     .col-xl-7
     {
@@ -5166,7 +5166,14 @@ input[type='button'].btn-block
 .nav-tabs .nav-item
 {
     margin-bottom: -1px;
+    display: flex;
+    align-items: center;
 }
+.nav-item-text{
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
 .nav-tabs .nav-link
 {
     border: 1px solid transparent;
@@ -8623,7 +8630,7 @@ button.bg-darker:focus
 
 .justify-content-center
 {
-    justify-content: center !important;
+    justify-content: end !important;
 }
 
 .justify-content-between
@@ -17574,7 +17581,7 @@ a.btn-icon-only
 }
 .main-content .navbar-top
 {
-    position: absolute;
+    
     z-index: 1;
     top: 0;
     left: 0;
@@ -18269,7 +18276,7 @@ textarea[resize='horizontal']
 }
 .icon-xl + .icon-text
 {
-    width: calc(100% - $icon-size-xl - 1);
+    width: calc(100% - icon-size-xl - 1);
 }
 
 .icon-lg
@@ -18284,7 +18291,7 @@ textarea[resize='horizontal']
 }
 .icon-lg + .icon-text
 {
-    width: calc(100% - $icon-size-lg - 1);
+    width: calc(100% - icon-size-lg - 1);
 }
 
 .icon-sm
@@ -18299,7 +18306,7 @@ textarea[resize='horizontal']
 }
 .icon-sm + .icon-text
 {
-    width: calc(100% - $icon-size-sm - 1);
+    width: calc(100% - icon-size-sm - 1);
 }
 
 .icon-shape
@@ -21875,4 +21882,39 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     bottom: 0; 
 
     height: 3px;
+}
+/*update*/
+.fa 
+{
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa:hover 
+{
+    opacity: 0.7;
+}
+.fa-facebook 
+{
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter 
+{
+    background: #55ACEE;
+    color: white;
+}
+.fa-google 
+{
+    background: #dd4b39;
+    color: white;
+}
+.fa-instagram 
+{
+    background: #125688;
+    color: white;
 }
