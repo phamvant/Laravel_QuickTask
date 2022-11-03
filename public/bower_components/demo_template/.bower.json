@@ -1,0 +1,14 @@
+{
+  "name": "demo_template",
+  "homepage": "https://github.com/phamvant/demo_template",
+  "version": "1.0.1",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "be5dbd68466ba4145ea8e387c7f4c86de2df82fa"
+  },
+  "_source": "https://github.com/phamvant/demo_template.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/phamvant/demo_template.git"
+}

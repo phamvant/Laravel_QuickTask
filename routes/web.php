@@ -25,7 +25,15 @@ Route::get('/dashboard', function () {
 
 Route::get('lang/{lang}', [LangController::class, 'changeLang'])->name('lang');
 
+Route::get('home', [PageController::class, 'h'])->name('h');
+Route::get('mouse', [PageController::class, 'm'])->name('m');
+Route::get('keyboard', [PageController::class, 'k'])->name('k');
+Route::get('decoraccessories', [PageController::class, 'da'])->name('da');
+Route::get('figure', [PageController::class, 'f'])->name('f');
+Route::get('speaker', [PageController::class, 's'])->name('s');
+Route::get('clock', [PageController::class, 'c'])->name('c');
+
 Route::resource('users', UserController::class);
-Route::resource('tasks', TaskController::class);
+// Route::resource('tasks', TaskController::class);
 
 require __DIR__.'/auth.php';

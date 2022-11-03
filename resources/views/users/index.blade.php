@@ -1,3 +1,9 @@
+
+@extends('layouts.app')
+   
+@section('content')
+    @include('layouts.headers.cards')
+
 <html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,6 +19,9 @@
     <!-- Icons -->
     <link href="{{ asset('bower_components/demo_template/argon') }}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
     <link href="{{ asset('bower_components/demo_template/argon') }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Argon CSS -->
     <link type="text/css" href="{{ asset('bower_components/demo_template/argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
            <!-- Extra details for Live View on GitHub Pages -->
@@ -71,7 +80,7 @@
     </button>
     <!-- Brand -->
     <a class="navbar-brand pt-0" href="{{ route('home') }}">
-        <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="...">
+        <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/logo.png" class="navbar-brand-img" alt="...">
     </a>
     <!-- User -->
     <ul class="nav align-items-center d-md-none">
@@ -120,7 +129,7 @@
             <div class="row">
                 <div class="col-6 collapse-brand">
                     <a  href="{{ route('home') }}">
-                        <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/blue.png">
+                        <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/logo.png">
                     </a>
                 </div>
                 <div class="col-6 collapse-close">
@@ -223,7 +232,7 @@
 <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
 <div class="container-fluid">
     <!-- Brand -->
-    <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="{{ route('home') }}">Dashboard</a>
+    <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="{{ route('home') }}">Chào mừng các bạn đến với Cozyfam</a>
     <!-- Form -->
     <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
         <div class="form-group mb-0">
@@ -314,11 +323,11 @@
                                     <td>
                                         <a href="mailto:admin@argon.com">{{ $user->email }}</a>
                                     </td>
-                                    @if (isset($user->tasks->first()->task_content))
+                                    <!-- @if (isset($user->tasks->first()->task_content))
                                         <td>{{ $user->tasks->first()->task_content }}</td>
                                     @else
                                         <td> NULL </td>       
-                                    @endif
+                                    @endif -->
                                     <td class="text-right">
                                         <div class="dropdown">
                                             <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -381,10 +390,7 @@
     </div>
 
     
-    <script src="{{ asset('bower_components/demo_template/argon') }}/vendor/jquery/dist/jquery.min.js"></script>
-        <script src="{{ asset('bower_components/demo_template/argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @include('layouts.footers.auth')
     
-            
-    <!-- Argon JS -->
-    <script src="{{ asset('bower_components/demo_template/argon') }}/js/argon.js?v=1.0.0"></script>
-</body></html>
+
+@endsection

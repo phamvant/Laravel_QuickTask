@@ -5,8 +5,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Brand -->
-        <a class="navbar-brand pt-0" href="{{ route('home') }}">
-            <img src="{{ asset('/bower_components/demo_template/argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="...">
+        <a class="navbar-brand pt-0" href="{{ route('h') }}">
+            <img src="{{ asset('/bower_components/demo_template/argon') }}/img/brand/logobop.png" class="navbar-brand-img" alt="...">
         </a>
         <!-- User -->
         <ul class="nav align-items-center d-md-none">
@@ -54,7 +54,7 @@
                 <div class="row">
                     <div class="col-6 collapse-brand">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('argon') }}/img/brand/blue.png">
+                            <img src="{{ asset('bower_components/demo_template/argon') }}/img/brand/logo.png">
                         </a>
                     </div>
                     <div class="col-6 collapse-close">
@@ -77,75 +77,72 @@
                 </div>
             </form>
             <!-- Navigation -->
+            <hr class="my-3">
+            <h6 class="navbar-heading text-muted">{{ __('CATEGORY') }}</h6>
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}">
-                        <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
+                <li class="nav-item"  >
+                    <a class="nav-link" href="{{ route('h') }}">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/home1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('HOME') }}
                     </a>
                 </li>
+                
                 <li class="nav-item">
-                    <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
-                        <i class="fab fa-laravel" style="color: #f4645f;"></i>
-                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Laravel Examples') }}</span>
+                    <a class="nav-link"  href="{{ route('m') }}">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/mouse1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('MOUSE') }}
                     </a>
 
-                    <div class="collapse show" id="navbar-examples">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('users.show', ['user' => auth()->user()->id]) }}">
-                                    {{ __('User profile') }}
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('users.index') }}">
-                                    {{ __('User Management') }}
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="ni ni-planet text-blue"></i> {{ __('Icons') }}
+                    <a class="nav-link" href="{{ route('k') }}">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/keyboard1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('KEYBOARD') }}
                     </a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">
-                        <i class="ni ni-pin-3 text-orange"></i> {{ __('Maps') }}
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('f') }}">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/figure1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('FIGURE') }}
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <i class="ni ni-bullet-list-67 text-default"></i>
-                      <span class="nav-link-text">Tables</span>
+                    <a class="nav-link" href="{{ route('s') }}">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/speaker1.png" alt="" width="25%" height="25%" style="margin-right : 16px"> {{ __('SPEAKER') }}
                     </a>
                 </li>
-                <li class="nav-item mb-5 mr-4 ml-4 pl-1 bg-danger" style="position: absolute; bottom: 0;">
-                    <a class="nav-link text-white" href="https://www.creative-tim.com/product/argon-dashboard-pro-laravel" target="_blank">
-                        <i class="ni ni-cloud-download-95"></i> Upgrade to PRO
+                <li class="nav-item">
+                    <a class="nav-link " href="{{ route('c') }}">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/clock1.png" alt="" width="25%" height="25%" style="margin-right : 16px"> {{ __('CLOCK') }}
+                    </a>
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('da') }}">
+                    <img src="{{ asset('bower_components/demo_template/argon') }}/img/img-side/decoraccesories1.png" alt="" width="25%" height="25%" style="margin-right : 15px"> {{ __('DECOR ACCESSORIES') }}
                     </a>
                 </li>
+               
+                
+                
             </ul>
             <!-- Divider -->
             <hr class="my-3">
             <!-- Heading -->
-            <h6 class="navbar-heading text-muted">Documentation</h6>
+            <h6 class="navbar-heading text-muted">{{ __('INTERACTIVE') }}</h6>
             <!-- Navigation -->
             <ul class="navbar-nav mb-md-3">
                 <li class="nav-item">
                     <a class="nav-link" href="https://argon-dashboard-laravel.creative-tim.com/docs/getting-started/overview.html">
-                        <i class="ni ni-spaceship"></i> Getting started
+                        <i class="ni ni-spaceship"></i> {{ __('SUPPORT') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://argon-dashboard-laravel.creative-tim.com/docs/foundation/colors.html">
-                        <i class="ni ni-palette"></i> Foundation
+                        <i class="ni ni-palette"></i> {{ __('FEEDBACK') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://argon-dashboard-laravel.creative-tim.com/docs/components/alerts.html">
-                        <i class="ni ni-ui-04"></i> Components
+                        <i class="ni ni-ui-04"></i> MAP
                     </a>
                 </li>
             </ul>

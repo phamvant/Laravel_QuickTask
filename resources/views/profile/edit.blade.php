@@ -138,7 +138,7 @@
                             </div>
                         </form>
                         <hr class="my-4" />
-                        <form method="post" action="{{ route('tasks.update', ['task' => $user->tasks->first()->id]) }}" autocomplete="off">
+                        <form method="post" action="#" autocomplete="off">
                             @csrf
                             @method('put')
                             <h6 class="heading-small text-muted mb-4">{{ __('User task') }}</h6>  
@@ -158,7 +158,7 @@
                                 @endif
                                 <div class="form-group{{ $errors->has('task_content') ? ' has-danger' : '' }}">
                                     <label class="form-control-label" for="input-task">{{ __('Task') }}</label>
-                                    @if (isset($user->tasks->first()->task_content))
+                                    <!-- @if (isset($user->tasks->first()->task_content))
                                         <input type="text" name="task_content" id="input-taskcontent" class="form-control form-control-alternative{{ $errors->has('task_content') ? ' is-invalid' : '' }}" placeholder="{{ __('Task') }}" value="{{ old('task_content', $user->tasks->first()->task_content) }}" required>
                                     @else
                                         <input type="text" name="task_content" id="input-taskcontent" class="form-control form-control-alternative{{ $errors->has('task_content') ? ' is-invalid' : '' }}" placeholder="{{ __('Task') }}" value="NULL" required>
@@ -174,7 +174,7 @@
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('email') }}</strong>
                                         </span>
-                                    @endif
+                                    @endif -->
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-success mt-4">{{ __('Save') }}</button>
