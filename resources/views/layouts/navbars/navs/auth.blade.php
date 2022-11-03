@@ -2,7 +2,7 @@
 <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main" style = "background-color: gray">
     <div class="container-fluid">
         <!-- Brand -->
-        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="{{ route('home') }}">{{ __('Chào mừng các bạn đến với Cozyfam') }}</a>
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="{{ route('h') }}">{{ __('HOTLINE: 0875.412.187') }}</a>
         <!-- Form -->
         <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
             <div class="form-group mb-0">

@@ -20,8 +20,15 @@
 
 <div class="super_container">
 	
-	
+<!-- Banner -->
 
+<div class="banner">
+		<div class="banner_background" style="background-image:url({{ asset('/bower_components/demo_template/argon') }}/img/brand/trend1.png)"></div>
+		<div class="container fill_height">
+			
+		</div>
+	</div>
+	
 	<!-- Characteristics -->
 
 	<div class="characteristics">
@@ -34,8 +41,8 @@
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
 						<div class="char_icon"><img src="{{ asset('bower_components/demo_template/onetech') }}/images/char_1.png" alt=""></div>
 						<div class="char_content">
-							<div class="char_title">Free Delivery</div>
-							<div class="char_subtitle">from $50</div>
+							<div class="char_title">{{ __('Free Delivery') }}</div>
+							<div class="char_subtitle">{{ __('from $50') }}</div>
 						</div>
 					</div>
 				</div>
@@ -46,8 +53,8 @@
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
 						<div class="char_icon"><img src="{{ asset('bower_components/demo_template/onetech') }}/images/char_2.png" alt=""></div>
 						<div class="char_content">
-							<div class="char_title">Free Exchange</div>
-							<div class="char_subtitle">from $50</div>
+							<div class="char_title">{{ __('Free Exchange') }}</div>
+							<div class="char_subtitle">{{ __('from $50') }}</div>
 						</div>
 					</div>
 				</div>
@@ -58,8 +65,8 @@
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
 						<div class="char_icon"><img src="{{ asset('bower_components/demo_template/onetech') }}/images/char_3.png" alt=""></div>
 						<div class="char_content">
-							<div class="char_title">Free VAT</div>
-							<div class="char_subtitle">from $50</div>
+							<div class="char_title">{{ __('Free VAT') }}</div>
+							<div class="char_subtitle">{{ __('from $50') }}</div>
 						</div>
 					</div>
 				</div>
@@ -70,8 +77,8 @@
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
 						<div class="char_icon"><img src="{{ asset('bower_components/demo_template/onetech') }}/images/char_4.png" alt=""></div>
 						<div class="char_content">
-							<div class="char_title">Discount Tickets</div>
-							<div class="char_subtitle">from $50</div>
+							<div class="char_title">{{ __('Discount Tickets') }}</div>
+							<div class="char_subtitle">{{ __('from $50') }}</div>
 						</div>
 					</div>
 				</div>
@@ -99,7 +106,7 @@
 				<div class="col">
 					<div class="tabbed_container">
 						<div class="tabs clearfix tabs-right">
-							<div class="new_arrivals_title">Hot New Arrivals</div>
+							<div class="new_arrivals_title">{{ __('Hot New Arrivals') }}</div>
 							<div class="tabs_line"><span></span></div>
 						</div>
 						<div class="row">
@@ -129,7 +136,7 @@
 				<div class="col">
 					<div class="tabbed_container">
 						<div class="tabs clearfix tabs-right">
-							<div class="new_arrivals_title">Hot Best Sellers</div>
+							<div class="new_arrivals_title">{{ __('Hot Best Sellers') }}</div>
 							<div class="tabs_line"><span></span></div>
 						</div>
 
@@ -365,66 +372,16 @@
 		</div>
 	</div>
 
-	<!-- Adverts -->
-
-	<div class="adverts">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-4 advert_col">
-					
-					<!-- Advert Item -->
-
-					<div class="advert d-flex flex-row align-items-center justify-content-start">
-						<div class="advert_content">
-							<div class="advert_title"><a href="#">Trends 2018</a></div>
-							<div class="advert_text">Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</div>
-						</div>
-						<div class="ml-auto"><div class="advert_image"><img src="images/adv_1.png" alt=""></div></div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 advert_col">
-					
-					<!-- Advert Item -->
-
-					<div class="advert d-flex flex-row align-items-center justify-content-start">
-						<div class="advert_content">
-							<div class="advert_subtitle">Trends 2018</div>
-							<div class="advert_title_2"><a href="#">Sale -45%</a></div>
-							<div class="advert_text">Lorem ipsum dolor sit amet, consectetur.</div>
-						</div>
-						<div class="ml-auto"><div class="advert_image"><img src="images/adv_2.png" alt=""></div></div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 advert_col">
-					
-					<!-- Advert Item -->
-
-					<div class="advert d-flex flex-row align-items-center justify-content-start">
-						<div class="advert_content">
-							<div class="advert_title"><a href="#">Trends 2018</a></div>
-							<div class="advert_text">Lorem ipsum dolor sit amet, consectetur.</div>
-						</div>
-						<div class="ml-auto"><div class="advert_image"><img src="images/adv_3.png" alt=""></div></div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
 	<!-- Trends -->
 
-	<div class="trends">
-		<div class="trends_background" style="background-image:url(images/trends_background.jpg)"></div>
+	<div class="trends" >
+		<div class="trends_background" style="background-image:url({{ asset('/bower_components/demo_template/argon') }}/img/brand/trend1.png)" ></div>
 		<div class="trends_overlay"></div>
 		<div class="container">
 			<div class="row">
 
 				<!-- Trends Content -->
-				<div class="col-lg-3">
+				<div class="col-lg-3 tr">
 					<div class="trends_container">
 						<h2 class="trends_title">Trends 2018</h2>
 						<div class="trends_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</p></div>
@@ -565,6 +522,8 @@
 		</div>
 	</div>
 
+	
+
 	<!-- Reviews -->
 
 	<div class="reviews">
@@ -573,8 +532,8 @@
 				<div class="col">
 					
 					<div class="reviews_title_container">
-						<h3 class="reviews_title">Latest Reviews</h3>
-						<div class="reviews_all ml-auto"><a href="#">view all <span>reviews</span></a></div>
+						<h3 class="reviews_title">{{ __('Latest Reviews') }}</h3>
+						<div class="reviews_all ml-auto"><a href="#">{{ __('view all') }} <span>{{ __('đánh giá') }}</span></a></div>
 					</div>
 
 					<div class="reviews_slider_container">
@@ -687,7 +646,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="viewed_title_container">
-						<h3 class="viewed_title">Recently Viewed</h3>
+						<h3 class="viewed_title">{{ __('Recently Viewed') }}</h3>
 						<div class="viewed_nav_container">
 							<div class="viewed_nav viewed_prev"><i class="fas fa-chevron-left"></i></div>
 							<div class="viewed_nav viewed_next"><i class="fas fa-chevron-right"></i></div>
@@ -823,4 +782,5 @@
 <script src="{{ asset('bower_components/demo_template/onetech') }}/plugins/slick-1.8.0/slick.js"></script>
 <script src="{{ asset('bower_components/demo_template/onetech') }}/plugins/easing/easing.js"></script>
 <script src="{{ asset('bower_components/demo_template/onetech') }}/js/custom.js"></script>-->
+@include('layouts.footers.auth')
 @endsection
