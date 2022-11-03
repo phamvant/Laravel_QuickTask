@@ -16266,8 +16266,7 @@ a.btn-icon-only {
 
 @media (min-width: 768px) {
     .main-content .container-fluid {
-        padding-right: 39px !important;
-        padding-left: 39px !important;
+        
     }
 }
 
@@ -18110,7 +18109,11 @@ textarea[resize='horizontal'] {
     }
 
     .navbar-vertical.navbar-expand-md .navbar-brand-img {
-        max-height: 100%;
+        max-height: 50%;
+        max-width: 50%;
+        min-width: 50%;
+        min-height: 50%;
+        padding-top:16px;
 
     }
 
