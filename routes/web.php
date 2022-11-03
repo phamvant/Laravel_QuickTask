@@ -18,6 +18,7 @@ use App\Http\Controllers\TaskController;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/getdata', [PageController::class, 'get_data']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
