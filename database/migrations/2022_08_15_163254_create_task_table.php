@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tasks', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->string('task_content', 1000);
-            $table->date('deadline');
-            $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
-        });
+        // Schema::create('tasks', function (Blueprint $table) {
+        //     $table->id();
+        //     $table->unsignedBigInteger('user_id');
+        //     $table->string('task_content', 1000);
+        //     $table->date('deadline');
+        //     $table->timestamps();
+        //     $table->foreign('user_id')->references('id')->on('users');
+        // });
     }
 
     /**
@@ -30,9 +30,9 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('tasks', function (Blueprint $table) {
-            $table->dropForeign(['user_id']);
-        });
-        Schema::dropIfExists('tasks');
+        // Schema::table('tasks', function (Blueprint $table) {
+        //     $table->dropForeign(['user_id']);
+        // });
+        // Schema::dropIfExists('tasks');
     }
 };

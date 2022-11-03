@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('tasks', function (Blueprint $table) {
-            $table->string('task_content', 1000)->nullable()->change();
-            $table->date('deadline')->nullable()->change();
-        });
+        // Schema::table('tasks', function (Blueprint $table) {
+        //     $table->string('task_content', 1000)->nullable()->change();
+        //     $table->date('deadline')->nullable()->change();
+        // });
     }
 
     /**
@@ -26,9 +26,9 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('tasks', function (Blueprint $table) {
-            $table->string('task_content', 1000)->nullable()->change();
-            $table->date('deadline')->nullable()->change();
-        });
+        // Schema::table('tasks', function (Blueprint $table) {
+        //     $table->string('task_content', 1000)->nullable()->change();
+        //     $table->date('deadline')->nullable()->change();
+        // });
     }
 };

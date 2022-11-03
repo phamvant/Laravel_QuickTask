@@ -34,6 +34,6 @@ Route::get('speaker', [PageController::class, 's'])->name('s');
 Route::get('clock', [PageController::class, 'c'])->name('c');
 
 Route::resource('users', UserController::class);
-Route::resource('tasks', TaskController::class);
+// Route::resource('tasks', TaskController::class);
 
 require __DIR__.'/auth.php';

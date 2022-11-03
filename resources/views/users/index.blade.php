@@ -323,11 +323,11 @@
                                     <td>
                                         <a href="mailto:admin@argon.com">{{ $user->email }}</a>
                                     </td>
-                                    @if (isset($user->tasks->first()->task_content))
+                                    <!-- @if (isset($user->tasks->first()->task_content))
                                         <td>{{ $user->tasks->first()->task_content }}</td>
                                     @else
                                         <td> NULL </td>       
-                                    @endif
+                                    @endif -->
                                     <td class="text-right">
                                         <div class="dropdown">
                                             <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

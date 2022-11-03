@@ -50,9 +50,9 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = User::with('tasks')->find($id);
+        // $user = User::with('tasks')->find($id);
 
-        return view('profile.edit', compact('user'));
+        return view('profile.edit');
     }
 
     /**
@@ -63,9 +63,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $user = User::with('tasks')->find($id);
+        // $user = User::with('tasks')->find($id);
 
-        return view('profile.edit', compact('user'));
+        return view('profile.edit');
     }
 
     /**
