@@ -6,6 +6,29 @@
         <!-- Form -->
         <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
             <div class="form-group mb-0">
+            
+							<div class="wishlist d-flex flex-row align-items-center justify-content-end">
+								<div class="wishlist_icon"><img src="{{ asset('/bower_components/demo_template/onetech') }}/images/heart.png" alt=""></div>
+								<div class="wishlist_content">
+									<div class="wishlist_text"><a href="#">{{ __('Wishlist') }}</a></div>
+									<div class="wishlist_count">115</div>
+								</div>
+							</div>
+
+							<!-- Cart -->
+							<div class="cart">
+								<div class="cart_container d-flex flex-row align-items-center justify-content-end">
+									<div class="cart_icon">
+										<img src="{{ asset('/bower_components/demo_template/onetech') }}/images/cart.png" alt="">
+										<div class="cart_count"><span>10</span></div>
+									</div>
+									<div class="cart_content">
+										<div class="cart_text"><a href="#">{{ __('Cart') }}</a></div>
+										<div class="cart_price">$85</div>
+									</div>
+								</div>
+							</div>
+						
                 <div class="input-group input-group-alternative">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-search"></i></span>

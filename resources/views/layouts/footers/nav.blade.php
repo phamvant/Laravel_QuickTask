@@ -42,6 +42,8 @@
 <body>
 <div class="row align-items-center justify-content-xl-between">
     <div class="col-xl-6">
+
+
         <ul class="nav nav-footer social_list">
             
             <li class="nav-item nav_item_trans">

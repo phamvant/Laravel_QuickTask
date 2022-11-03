@@ -760,7 +760,7 @@ select option
 {
 	font-size: 18px;
 	font-weight: 400;
-	color: #000000;
+	color: #ffffff;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -812,7 +812,7 @@ select option
 {
 	font-size: 18px;
 	font-weight: 400;
-	color: #000000;
+	color: #ffffff;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -1278,7 +1278,7 @@ select option
 .characteristics
 {
 	padding: 70px;
-	margin-top: 70px;
+	
 }
 .char_item
 {
@@ -3039,8 +3039,10 @@ select option
 }
 .reviews_title
 {
-	font-weight: 500;
+	font-size:24px;
 	margin-bottom: 14px;
+	font-family: 'Open Sans';
+	color: #525F7F;
 }
 .reviews_all
 {
