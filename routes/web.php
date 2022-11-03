@@ -18,9 +18,10 @@ use App\Http\Controllers\TaskController;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/getdata', [PageController::class, 'get_data']);
 
 Route::get('/dashboard', function () {
-    return view('pages.home');
+    return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('lang/{lang}', [LangController::class, 'changeLang'])->name('lang');
@@ -34,6 +35,6 @@ Route::get('speaker', [PageController::class, 's'])->name('s');
 Route::get('clock', [PageController::class, 'c'])->name('c');
 
 Route::resource('users', UserController::class);
-Route::resource('tasks', TaskController::class);
+// Route::resource('tasks', TaskController::class);
 
 require __DIR__.'/auth.php';

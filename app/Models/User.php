@@ -20,7 +20,7 @@ class User extends Authenticatable
      */
 
     protected $fillable = [
-        'id',
+        'userid',
         'first_name',
         'last_name',
         'username',
@@ -49,10 +49,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function tasks()
-    {
-        return $this->hasMany(Task::class);
-    }
+    // public function tasks()
+    // {
+    //     return $this->hasMany(Task::class);
+    // }
 
     protected function fullname(): Attribute
     {

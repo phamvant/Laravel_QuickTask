@@ -14,15 +14,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/demo_template/onetech') }}/plugins/slick-1.8.0/slick.css">
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/demo_template/onetech') }}/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/demo_template/onetech') }}/styles/responsive.css">
-<link rel="canonical" href="https://lacdau.com/lot-chuot" >
-<link rel="shortcut icon" href="/static/assets/default/images/favicon.png" type="image/x-icon" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<div id="js-fontawesome-lib"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />    
-<link rel="stylesheet" href="https://lacdau.com/static/assets/default/script/library.css">
-<link rel="stylesheet" href="https://lacdau.com/static/assets/default/script/pc_style.css?27.07.2022.61">
+
 </head>
 @extends('layouts.app')
 <body>
@@ -166,8 +158,8 @@
                         <span style="width: 100%; margin-top: 10px; color: rgb(255, 0, 0); font-weight: 600;" id="js-filter-note"></span>
                     </div>
 
-                    <select class="sort-select-item" onchange="window.location = this.value">
-                        <option value="/lot-chuot">Lọc sản phẩm</option>
+                    <select class="sort-select-item" onchange="window.location = this.value" style="border:none; text-align: center; color: black;">
+                        <option value="/lot-chuot">Lọc</option>
 
                         
                         <option value="https://lacdau.com/lot-chuot?other_filter=in-stock" >Còn hàng</option>

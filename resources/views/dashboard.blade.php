@@ -8,6 +8,8 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/demo_template/onetech') }}/plugins/slick-1.8.0/slick.css">
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/demo_template/onetech') }}/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/demo_template/onetech') }}/styles/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+s
 
 
 @section('content')

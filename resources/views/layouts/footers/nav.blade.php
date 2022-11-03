@@ -42,20 +42,20 @@
 <body>
 <div class="row align-items-center justify-content-xl-between">
     <div class="col-xl-6">
-        <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-            <li class="nav-item nav-item-text">
-                Hãy theo dõi shop tại đây nhé:
-            </li>
-            <li class="nav-item">
+
+
+        <ul class="nav nav-footer social_list">
+            
+            <li class="nav-item nav_item_trans">
                 <a href="#" class="fa fa-facebook"></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav_item_trans">
                 <a href="#" class="fa fa-twitter"></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav_item_trans">
                 <a href="#" class="fa fa-google"></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav_item_trans">
                 <a href="#" class="fa fa-instagram"></a>
             </li>
         </ul>
