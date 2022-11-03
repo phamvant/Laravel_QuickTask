@@ -438,7 +438,7 @@ h6,
 .h5,
 .h6 {
     font-family: inherit;
-    
+
     line-height: 1.5;
 
     margin-bottom: .5rem;
@@ -8010,7 +8010,7 @@ button.bg-darker:focus {
 
 .align-items-center {
 
-padding-left: 30px;
+    padding-left: 30px;
     align-items: center !important;
 }
 
@@ -16265,9 +16265,7 @@ a.btn-icon-only {
 }
 
 @media (min-width: 768px) {
-    .main-content .container-fluid {
-        
-    }
+    .main-content .container-fluid {}
 }
 
 .navbar-vertical.navbar-expand-xs.fixed-left+.main-content {
@@ -18113,7 +18111,7 @@ textarea[resize='horizontal'] {
         max-width: 50%;
         min-width: 50%;
         min-height: 50%;
-        padding-top:16px;
+        padding-top: 16px;
 
     }
 
@@ -18400,7 +18398,7 @@ textarea[resize='horizontal'] {
     width: 410px;
 }
 
-    background-color: transparent;
+background-color: transparent;
 }
 
 .navbar-search-dark .input-group {
@@ -20273,11 +20271,12 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle {
 }
 
 .header_wel {
-    background-image: url("https://r4.wallpaperflare.com/wallpaper/533/163/784/digital-digital-art-artwork-illustration-minimalism-hd-wallpaper-d6caac3492787d76e8e36b4298facda4.jpg");
+    background-image: url("https://c1.wallpaperflare.com/path/744/25/273/mobile-phone-case-accessories-9cc340eaf6699d431cb29929910e1627.jpg");
     background-size: cover;
     padding-top: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.6;
 }
 
 .more_txt_wel {
@@ -20304,4 +20303,43 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle {
 .nav_logup {
     background-color: white;
     color: #172b4d !important;
+}
+
+.sort-by-group a {
+    padding: 0 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort-by-list {
+    display: flex;
+}
+
+.price-range {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px 4px;
+    text-align: center;
+    margin: 0 8px;
+}
+
+.submit-filter {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px 12px !important;
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.sort-select-item {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 4px 2px;
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    outline: 1px solid black;
 }

@@ -158,8 +158,8 @@
                         <span style="width: 100%; margin-top: 10px; color: rgb(255, 0, 0); font-weight: 600;" id="js-filter-note"></span>
                     </div>
 
-                    <select class="sort-select-item" onchange="window.location = this.value">
-                        <option value="/lot-chuot">Lọc sản phẩm</option>
+                    <select class="sort-select-item" onchange="window.location = this.value" style="border:none; text-align: center; color: black;">
+                        <option value="/lot-chuot">Lọc</option>
 
                         
                         <option value="https://lacdau.com/lot-chuot?other_filter=in-stock" >Còn hàng</option>
