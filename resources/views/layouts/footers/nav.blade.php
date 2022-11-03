@@ -44,7 +44,7 @@
     <div class="col-xl-6">
         <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item nav-item-text">
-                :
+                Hãy theo dõi shop tại đây nhé:
             </li>
             <li class="nav-item">
                 <a href="#" class="fa fa-facebook"></a>

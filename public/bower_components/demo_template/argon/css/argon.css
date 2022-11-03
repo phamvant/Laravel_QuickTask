@@ -494,7 +494,7 @@ h6,
 .h6
 {
     font-family: inherit;
-    font-weight: 600;
+    
     line-height: 1.5;
 
     margin-bottom: .5rem;
@@ -517,7 +517,8 @@ h2,
 h3,
 .h3
 {
-    font-size: 1.0625rem;
+    font-size: 24px;
+    color: #525F7F;
 }
 
 h4,
@@ -2851,12 +2852,11 @@ textarea.form-control
     .form-inline .form-group
     {
         display: flex;
-
-        margin-bottom: 0; 
-
+        
         flex: 0 0 auto;
         flex-flow: row wrap;
         align-items: center;
+        flex-direction: row-reverse;
     }
     .form-inline .form-control
     {
@@ -8655,6 +8655,7 @@ button.bg-darker:focus
 
 .align-items-center
 {
+    padding-left: 30px;
     align-items: center !important;
 }
 
@@ -16515,6 +16516,7 @@ a.text-cyan:focus
 .text-white
 {
     color: #fff !important;
+    font-size: 18px;
 }
 
 a.text-white:hover,
@@ -19906,7 +19908,7 @@ textarea[resize='horizontal']
 
 .navbar-search .form-control
 {
-    width: 270px;
+    width: 410px;
 
     background-color: transparent;
 }
