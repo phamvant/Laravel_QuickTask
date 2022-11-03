@@ -14,8 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('id')->after('userid');
-            $table->timestamps();
+            $table->string('password')->after('email');            
         });
         Schema::dropIfExists('personal_access_tokens');
     }
@@ -28,7 +27,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('id');
+            $table->dropColumn('password');
         });
         Schema::dropIfExists('personal_access_tokens');
     }
